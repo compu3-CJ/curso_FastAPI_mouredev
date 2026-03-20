@@ -19,13 +19,13 @@ users_list = [User(id= 1, name = "Crist", surname = "Jara" , url = "https://cris
 async def users_class():
     return users_list
 
-## PATH -  
+## PATH -  http://127.0.0.1:8000/user/1
 @app.get("/user/{id}")
 async def user(id: int):
     return search_user(id)
 
 
-## QUERY -  http://127.0.0.1:8000/user_query/?id=1
+## QUERY -  http://127.0.0.1:8000/user/?id=1
 """
 @app.get("/user_query/")
 async def user_query(id: int):
