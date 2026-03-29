@@ -48,10 +48,5 @@ def search_user(id: int):
         return {"error":"Usuario no valido"}
 
 
-
-
-
-
-
 # Inicia el server: uvicorn [name_archivo]:app --reload
 # uvicorn path_query:app --reload
